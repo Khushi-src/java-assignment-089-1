@@ -2,26 +2,24 @@ package bankaccount;
 
 import java.util.Scanner;
 
-    /**
-     * UserInterface.java
-     */
+    
     public class UserInterface {
-        private Account[] accounts;          // Single-dimensional array of accounts
-        private double[][] transactions;     // Multi-dimensional array: [index][0]=lastDeposit, [index][1]=lastWithdrawal
+        private Account[] accounts;          
+        private double[][] transactions;     
         private Scanner scanner;
-        private int accountCount;            // Number of accounts created
-        private int nextAccountNumber;       // Auto-incrementing account number
+        private int accountCount;            
+        private int nextAccountNumber;   
 
-        // Constructor
+   
         public UserInterface() {
             accounts = new Account[100];
             transactions = new double[100][2];
             scanner = new Scanner(System.in);
             accountCount = 0;
-            nextAccountNumber = 1001;        // Starting account number
+            nextAccountNumber = 1001;        
         }
 
-        // Main menu loop
+        
         public void mainMenu() {
             int choice;
             do {
@@ -34,7 +32,7 @@ import java.util.Scanner;
                 System.out.println("6. Exit");
                 System.out.print("Enter your choice: ");
                 choice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1: createAccount();       break;
@@ -50,7 +48,7 @@ import java.util.Scanner;
             scanner.close();
         }
 
-        // 1. Create a new account
+      
         private void createAccount() {
             System.out.print("Enter account holder name: ");
             String name = scanner.nextLine();
@@ -69,15 +67,15 @@ import java.util.Scanner;
             accounts[accountCount] = newAccount;
             System.out.println("Account created successfully with Account Number: " + nextAccountNumber);
 
-            // Initialize transaction log for this account
-            transactions[accountCount][0] = 0;  // last deposit
-            transactions[accountCount][1] = 0;  // last withdrawal
+           
+            transactions[accountCount][0] = 0;
+            transactions[accountCount][1] = 0;  
 
             accountCount++;
             nextAccountNumber++;
         }
 
-        // 2. Deposit operation
+        
         private void performDeposit() {
             System.out.print("Enter account number: ");
             int accNum = scanner.nextInt();
@@ -93,7 +91,7 @@ import java.util.Scanner;
             }
         }
 
-        // 3. Withdrawal operation
+        
         private void performWithdrawal() {
             System.out.print("Enter account number: ");
             int accNum = scanner.nextInt();
@@ -109,7 +107,7 @@ import java.util.Scanner;
             }
         }
 
-        // 4. Show account details
+      
         private void showAccountDetails() {
             System.out.print("Enter account number: ");
             int accNum = scanner.nextInt();
@@ -124,7 +122,7 @@ import java.util.Scanner;
             }
         }
 
-        // 5. Update contact details
+       
         private void updateContact() {
             System.out.print("Enter account number: ");
             int accNum = scanner.nextInt();
@@ -142,7 +140,7 @@ import java.util.Scanner;
             }
         }
 
-        // Helper: find account index by account number
+        
         private int findAccountIndex(int accNum) {
             for (int i = 0; i < accountCount; i++) {
                 if (accounts[i].getAccountNumber() == accNum) {
@@ -152,7 +150,7 @@ import java.util.Scanner;
             return -1;
         }
 
-        // Entry point
+        
         public static void main(String[] args) {
             UserInterface ui = new UserInterface();
             ui.mainMenu();
