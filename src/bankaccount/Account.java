@@ -1,14 +1,14 @@
 package bankaccount;
 
 public class Account {
-    // Attributes
+    
     private int accountNumber;
     private String accountHolderName;
     private double balance;
     private String email;
     private String phoneNumber;
 
-    // Constructor
+    
     public Account(int accountNumber, String accountHolderName,
                    double initialDeposit, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
@@ -18,7 +18,7 @@ public class Account {
         this.phoneNumber = phoneNumber;
     }
 
-    // Method to deposit money
+  
     public void deposit(double amount) {
         if (amount <= 0) {
             System.out.println("Deposit amount must be positive.");
@@ -28,7 +28,7 @@ public class Account {
         }
     }
 
-    // Method to withdraw money
+    
     public void withdraw(double amount) {
         if (amount <= 0) {
             System.out.println("Withdrawal amount must be positive.");
@@ -40,7 +40,7 @@ public class Account {
         }
     }
 
-    // Display account details
+    
     public void displayAccountDetails() {
         System.out.println("Account Number   : " + accountNumber);
         System.out.println("Account Holder   : " + accountHolderName);
@@ -49,14 +49,14 @@ public class Account {
         System.out.println("Phone Number     : " + phoneNumber);
     }
 
-    // Update email and phone number
+   
     public void updateContactDetails(String email, String phoneNumber) {
         this.email = email;
         this.phoneNumber = phoneNumber;
         System.out.println("Contact details updated successfully.");
     }
 
-    // Getter for account number
+  
     public int getAccountNumber() {
         return accountNumber;
     }
