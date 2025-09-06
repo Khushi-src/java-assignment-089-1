@@ -4,7 +4,7 @@ B.TECH(CSE)/SEMESTER-3
 , **JAVA ASSIGNMENT-1**
 
 
-**BANKING APPLICATION**-
+#### BANKING APPLICATION-
 A simple Java console program that lets users create an account, deposit funds, withdraw funds, and check their balance. It’s organized into a bankaccount package with clear separation between the account logic and the user interface.
 
 **Features**
