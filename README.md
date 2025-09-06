@@ -62,8 +62,7 @@ A simple Java console program that lets users create an account, deposit funds, 
 - <img width="617" height="406" alt="image" src="https://github.com/user-attachments/assets/e2f6689a-9856-4b16-9429-328922620513" />
 - <img width="535" height="373" alt="image" src="https://github.com/user-attachments/assets/0fa202cd-1648-4099-a97d-bc22c250d86e" />
 
-License
-- This project is developed for educational purposes and may be reused with credit.
+
 
 
 
