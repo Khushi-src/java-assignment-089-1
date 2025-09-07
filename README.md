@@ -1,8 +1,9 @@
-B.TECH(CSE)/SEMESTER-3
-, KHUSHI
-, SECTION-A 
-, **JAVA ASSIGNMENT-1**
-
+# Student Info-
+- NAME: KHUSHI
+- COURSE: B.TECH(CSE)
+- ROLL NO: 2401010089 
+ 
+# JAVA ASSIGNMENT-1
 
 # BANKING APPLICATION-
 A simple Java console program that lets users create an account, deposit funds, withdraw funds, and check their balance. It’s organized into a bankaccount package with clear separation between the account logic and the user interface.
@@ -13,26 +14,24 @@ A simple Java console program that lets users create an account, deposit funds, 
 - Withdraw money with basic overdraft protection
 - View current account balance at any time
 
-**Tech Stack**
-- Java 8+
-- No external libraries—pure Java SE
-- Console-based interface using Scanner
-
 **Getting Started**
-*Prerequisites*
 - Java Development Kit (JDK) installed
 - A terminal or command prompt
 - Optional: IntelliJ IDEA or any Java-friendly IDE
 
 **Installation & Run**
 1) Clone your repo
-<img width="648" height="113" alt="image" src="https://github.com/user-attachments/assets/73d7dc02-fb1e-4f73-b02f-1cea6ca0eb33" />
-
-2) Compile the code
-<img width="633" height="112" alt="image" src="https://github.com/user-attachments/assets/960165f3-d766-45df-a9a9-165c48e6779a" />
-
-3) Run the application
-<img width="590" height="107" alt="image" src="https://github.com/user-attachments/assets/2342f168-8437-4c10-bcec-9d5740040036" />
+   ```bash
+   git clone https://github.com/Khushi-src/java-assignment-089-1
+   cd java-assignment-089-1
+   ```
+3) Compile the code
+   ```bash
+   java -d out src/bankaccount/*.java
+   ```
+5) Run the application
+   ```bash
+   java -cp out bankaccount.UserInterface
 
 **Project Structure**
 - src/
@@ -61,6 +60,7 @@ A simple Java console program that lets users create an account, deposit funds, 
 - <img width="611" height="542" alt="image" src="https://github.com/user-attachments/assets/30f05231-0326-48df-8796-f29460712bb1" />
 - <img width="617" height="406" alt="image" src="https://github.com/user-attachments/assets/e2f6689a-9856-4b16-9429-328922620513" />
 - <img width="535" height="373" alt="image" src="https://github.com/user-attachments/assets/0fa202cd-1648-4099-a97d-bc22c250d86e" />
+
 
 
 
